@@ -1,3 +1,5 @@
+import Test from "../components/templates/test";
+
 export default function Abc() {
   return (
     <div>
@@ -8,6 +10,7 @@ export default function Abc() {
       <div className="food">
         <h4>상품2 $40</h4>
       </div>
+      <Test />
     </div>
   );
 }
