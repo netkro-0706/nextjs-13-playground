@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "trans:svg": "npx @svgr/cli -d src/components/primitives/icon public/_svg",
+    "gen-css-dts": "hcm 'src/**/*.module.scss' --sassLoadPaths=src/styles"
   },
   "dependencies": {
     "next": "13.2.4",
@@ -15,6 +17,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "happy-css-modules": "^2.1.2",
     "jest": "^29.7.0"
   }
 }
