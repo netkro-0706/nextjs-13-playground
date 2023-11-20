@@ -1,4 +1,4 @@
-import Test from "../components/templates/test";
+import Test from "../../components/templates/test";
 
 export default function Abc() {
   return (

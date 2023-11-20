@@ -1,6 +1,6 @@
-import CartItem from "../components/cartItem/page";
-import Welecome from "../components/welecome/page";
-import data from "./data";
+import CartItem from "../../components/cartItem/page";
+import Welecome from "../../components/welecome/page";
+import data from "../../db/data";
 
 export default function Cart() {
   return (

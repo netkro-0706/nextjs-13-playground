@@ -3,7 +3,7 @@ export default function Home() {
 
   return (
     <div>
-      <h4 className="title">애플 후레시</h4>
+      <h4 className="title">The Home</h4>
       <p className="title-sub">by dev {name}</p>
     </div>
   );
