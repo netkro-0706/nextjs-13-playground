@@ -32,7 +32,7 @@ export default function Test() {
       }, 2000);
     });
   };
-  const f2 = (message) => {
+  const f2 = (message: string) => {
     if (message != undefined) console.log(message);
     return new Promise((res, rej) => {
       setTimeout(() => {
@@ -41,7 +41,7 @@ export default function Test() {
       }, 3000);
     });
   };
-  const f3 = (message) => {
+  const f3 = (message: string) => {
     if (message != undefined) console.log(message);
     return new Promise((res, rej) => {
       setTimeout(() => {
@@ -54,7 +54,7 @@ export default function Test() {
   async function order() {
     console.log("시작");
     try {
-      const result = await Promise.all([f1(), f2(), f3()]);
+      const result = await Promise.all([f1(), f2("message2"), f3("message3")]);
       // const result1 = await f1();
       // const result2 = await f2(result1);
       // const result3 = await f3(result2);
