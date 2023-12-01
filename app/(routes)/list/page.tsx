@@ -1,3 +1,5 @@
+import ItemCard from "../../components/itemcard/page";
+
 export default function List() {
   let items = ["Tomatoes", "Pasta", "Coconut"];
 
@@ -5,11 +7,10 @@ export default function List() {
     <div>
       <h4 className="title">상품목록</h4>
       {items.map((item, i) => {
+        const price = i == 1 ? 30 : 0;
+
         return (
-          <div className="food" key={i}>
-            <img src={`/food${i}.png`} className="food-img" alt="food" />
-            <h4>{item} $40</h4>
-          </div>
+          <ItemCard src={`/food${i}.png`} index={i} item={item} price={price} />
         );
       })}
     </div>
