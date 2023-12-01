@@ -7,7 +7,7 @@ export default function Cart() {
     <div>
       <h4 className="title">Cart</h4>
       <Welecome />
-      <CartItem props={data} />
+      <CartItem age={data.age} name={data.name} />
       <CartItem />
       <CartItem />
     </div>

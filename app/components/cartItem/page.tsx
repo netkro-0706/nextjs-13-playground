@@ -1,4 +1,6 @@
-export default function CartItem({ age = 20, name = "item" }) {
+import React from "react";
+
+function CartItem({ age = 20, name = "item" }: CartItemProps) {
   return (
     <div className="cart-item">
       <p>{name}</p>
@@ -7,3 +9,5 @@ export default function CartItem({ age = 20, name = "item" }) {
     </div>
   );
 }
+
+export default CartItem;
