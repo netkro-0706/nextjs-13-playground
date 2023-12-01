@@ -4,6 +4,8 @@ const config: StorybookConfig = {
   stories: [
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../app/**/*.stories.mdx",
+    "../app/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   addons: [
     "@storybook/addon-links",
@@ -11,6 +13,7 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
   ],
+  staticDirs: ["../public", "../app/styles"],
   framework: {
     name: "@storybook/nextjs",
     options: {},
